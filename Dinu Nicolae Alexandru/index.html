@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bucureștiul în culori</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+
+<body>
+  
+    
+  <header class="header_area">
+    <div class="main-menu">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" ><img src="./img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-area">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bucuresti">Bucharest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map">Map</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+
+
+
+
+    <section id="home" class="site-banner fade-scroll-400 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 site-title ">
+            <h3 class="title-text ">Hey</h3>
+            <h1 class="title-text text-uppercase">I am Alex</h1>
+            <h4 class="title-text text-uppercase">senior year student</h4>
+          </div>
+          <div class="col-md-6 banner-image">
+            <img src="./img//banner/banner-image.png" alt="banner-img" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about-area" class="about-area ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 fade-scroll">
+            <div class="about-image fade-scroll-400">
+              <img src="./img/about-us.png" alt="About me" class="img-fluid">
+            </div>
+          </div>
+          <div class=" col-md-6 about-title fade-scroll-400">
+            <h2 class="text-uppercase pt-5">
+              <span>let me</span>
+              <span>introduce</span>
+              <span>myself</span>
+            </h2>
+            <div class="paragraph py-4 w-75">
+              <p class="para">
+                Hi, I am 22 yo senior year student at Polytechnic University of Bucharest. I’m excited to gain hands-on
+                work experience to complement my coursework and kick-start my software engineering career. As your
+                intern, I’ll bring my problem-solving abilities and big-picture mindset to develop and improve testing
+                technologies.
+              </p>
+              <p class="para">
+                On the other hand, in my free time I love playing basketball, playing video games with my friends (which
+                are flaming me) and going out for a walk.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="con fade-scroll-150">
+        <div class="card">
+          <div class="front">
+            <img src="./img/card.png" height="400px" width="300px" alt="">
+          </div>
+          <div class="back">
+            <img src="./img/card-back.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bucuresti" class="bucuresti fade-scroll-650">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./img/bucuresti.png" alt="buc">
+          </div>
+          <div class="col-md-6 pad-buc">
+            <div class="text-left">
+              <h1>Bucureștiul în culori</h1>
+              <div class="paragraph py-4 w-75">
+              <p class="para">
+                Bucureștiul, asemenea multor orașe din România, este văzut ca un oraș predominant gri și mohorât. De aceea, am hotărât să-l colorăm noi în viile culori ale curcubeului.
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="maps fade-scroll-100">
+      <div id="map"></div>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA575cwBxiY_jhVJiVAHbFtsBDAIGPJLHU&callback=initMap"> </script>
+      <script type="text/javascript">
+        function initMap() {
+          var test = { lat: 44.454813, lng: 26.1033655 };
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 11,
+            center: test
+          });
+
+          var coords1 = [
+            { lng: 25.974051, lat: 44.464343 },
+            { lng: 25.981776, lat: 44.478002 },
+            { lng: 25.985209, lat: 44.485167 },
+            { lng: 25.989243, lat: 44.492943 },
+            { lng: 25.993878, lat: 44.496371 },
+            { lng: 26.004092, lat: 44.498943 },
+            { lng: 26.010186, lat: 44.512471 },
+            { lng: 26.021787, lat: 44.518296 },
+            { lng: 26.062331, lat: 44.532524 },
+            { lng: 26.105504, lat: 44.538765 },
+            { lng: 26.105348, lat: 44.500703 },
+            { lng: 26.120797, lat: 44.502723 },
+            { lng: 26.121827, lat: 44.49807 },
+            { lng: 26.109897, lat: 44.497091 },
+            { lng: 26.11505, lat: 44.48673 },
+            { lng: 26.096682, lat: 44.488256 },
+            { lng: 26.096167, lat: 44.481153 },
+            { lng: 26.100802, lat: 44.434103 },
+            { lng: 26.085181, lat: 44.433367 },
+            { lng: 26.06132, lat: 44.45529 },
+            { lng: 26.013255, lat: 44.456271 },
+            { lng: 25.982462, lat: 44.465173 },
+            { lng: 25.974051, lat: 44.464343 }
+          ];
+
+          var coords2 = [
+            { lng: 26.11505, lat: 44.486729 },
+            { lng: 26.18211, lat: 44.479028 },
+            { lng: 26.156618, lat: 44.456028 },
+            { lng: 26.22577, lat: 44.432936 },
+            { lng: 26.216697, lat: 44.429651 },
+            { lng: 26.170933, lat: 44.427812 },
+            { lng: 26.15411, lat: 44.430754 },
+            { lng: 26.132481, lat: 44.431735 },
+            { lng: 26.110852, lat: 44.434431 },
+            { lng: 26.100802, lat: 44.434103 },
+            { lng: 26.096169, lat: 44.481151 },
+            { lng: 26.096683, lat: 44.488255 },
+            { lng: 26.11505, lat: 44.486729 },
+          ];
+          var coords3 = [
+            { lng: 26.22577, lat: 44.432934 },
+            { lng: 26.216699, lat: 44.429649 },
+            { lng: 26.170934, lat: 44.42781 },
+            { lng: 26.154112, lat: 44.430733 },
+            { lng: 26.132796, lat: 44.431689 },
+            { lng: 26.110852, lat: 44.434424 },
+            { lng: 26.103549, lat: 44.434195 },
+            { lng: 26.100888, lat: 44.434103 },
+            { lng: 26.09816, lat: 44.433978 },
+            { lng: 26.100254, lat: 44.426639 },
+            { lng: 26.108038, lat: 44.424882 },
+            { lng: 26.109347, lat: 44.422384 },
+            { lng: 26.110527, lat: 44.419763 },
+            { lng: 26.112351, lat: 44.417357 },
+            { lng: 26.114862, lat: 44.415012 },
+            { lng: 26.122243, lat: 44.408268 },
+            { lng: 26.132419, lat: 44.405782 },
+            { lng: 26.158919, lat: 44.398642 },
+            { lng: 26.183982, lat: 44.393122 },
+            { lng: 26.194367, lat: 44.393736 },
+            { lng: 26.221718, lat: 44.395142 },
+            { lng: 26.22577, lat: 44.432934 },
+          ];
+          var coords4 = [
+            { lng: 26.169412, lat: 44.39633 },
+            { lng: 26.163672, lat: 44.389181 },
+            { lng: 26.143101, lat: 44.369461 },
+            { lng: 26.16421, lat: 44.341102 },
+            { lng: 26.155026, lat: 44.334718 },
+            { lng: 26.125001, lat: 44.352419 },
+            { lng: 26.101655, lat: 44.365797 },
+            { lng: 26.088952, lat: 44.368374 },
+            { lng: 26.093044, lat: 44.389758 },
+            { lng: 26.096162, lat: 44.404649 },
+            { lng: 26.104616, lat: 44.413938 },
+            { lng: 26.104004, lat: 44.425792 },
+            { lng: 26.108006, lat: 44.424873 },
+            { lng: 26.109309, lat: 44.422385 },
+            { lng: 26.110482, lat: 44.419798 },
+            { lng: 26.112302, lat: 44.417367 },
+            { lng: 26.117182, lat: 44.41281 },
+            { lng: 26.12219, lat: 44.408284 },
+            { lng: 26.131968, lat: 44.405871 },
+            { lng: 26.144964, lat: 44.402415 },
+            { lng: 26.157145, lat: 44.399112 },
+            { lng: 26.158507, lat: 44.398743 },
+            { lng: 26.159869, lat: 44.39842 },
+            { lng: 26.161601, lat: 44.398038 },
+            { lng: 26.163332, lat: 44.397659 },
+            { lng: 26.169412, lat: 44.39633 },
+          ];
+          var coords5 = [
+            { lng: 26.088951, lat: 44.368374 },
+            { lng: 26.096159, lat: 44.404648 },
+            { lng: 26.104605, lat: 44.413939 },
+            { lng: 26.104003, lat: 44.425792 },
+            { lng: 26.102129, lat: 44.426211 },
+            { lng: 26.100254, lat: 44.426638 },
+            { lng: 26.098158, lat: 44.433977 },
+            { lng: 26.085182, lat: 44.433366 },
+            { lng: 26.083533, lat: 44.430593 },
+            { lng: 26.077095, lat: 44.424035 },
+            { lng: 26.070744, lat: 44.41815 },
+            { lng: 26.072804, lat: 44.413368 },
+            { lng: 26.073276, lat: 44.412709 },
+            { lng: 26.063746, lat: 44.406133 },
+            { lng: 26.050783, lat: 44.400538 },
+            { lng: 26.025543, lat: 44.39229 },
+            { lng: 26.03573, lat: 44.384594 },
+            { lng: 26.048321, lat: 44.377388 },
+            { lng: 26.088951, lat: 44.368374 },
+          ];
+          var coords6 = [
+            { lng: 26.025542, lat: 44.392291 },
+            { lng: 26.011251, lat: 44.405104 },
+            { lng: 25.976918, lat: 44.405656 },
+            { lng: 25.97198, lat: 44.414409 },
+            { lng: 25.968072, lat: 44.423406 },
+            { lng: 25.96592, lat: 44.442376 },
+            { lng: 25.993847, lat: 44.443342 },
+            { lng: 26.013191, lat: 44.443388 },
+            { lng: 26.019284, lat: 44.446486 },
+            { lng: 26.019474, lat: 44.448705 },
+            { lng: 26.018033, lat: 44.449514 },
+            { lng: 26.014552, lat: 44.451011 },
+            { lng: 26.013253, lat: 44.45627 },
+            { lng: 26.061319, lat: 44.455289 },
+            { lng: 26.08518, lat: 44.433366 },
+            { lng: 26.083532, lat: 44.430594 },
+            { lng: 26.080188, lat: 44.427203 },
+            { lng: 26.077785, lat: 44.424753 },
+            { lng: 26.077114, lat: 44.424055 },
+            { lng: 26.076236, lat: 44.423241 },
+            { lng: 26.075202, lat: 44.422305 },
+            { lng: 26.070728, lat: 44.418152 },
+            { lng: 26.071232, lat: 44.416977 },
+            { lng: 26.071763, lat: 44.415772 },
+            { lng: 26.072797, lat: 44.413365 },
+            { lng: 26.073275, lat: 44.41271 },
+            { lng: 26.063732, lat: 44.406138 },
+            { lng: 26.051318, lat: 44.400577 },
+            { lng: 26.025542, lat: 44.392291 },
+          ];
+
+
+
+          var s1Polygon = new google.maps.Polygon({
+            paths: coords1,
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.8,
+            strokeWeight: 3,
+            fillColor: '#FF0000',
+            fillOpacity: 0.5
+          });
+
+          var s2Polygon = new google.maps.Polygon({
+            paths: coords2,
+            strokeColor: '#FF7F00',
+            strokeOpacity: 0.8,
+            strokeWeight: 3,
+            fillColor: '#FF7F00',
+            fillOpacity: 0.5
+          });
+          var s3Polygon = new google.maps.Polygon({
+            paths: coords3,
+            strokeColor: '#FFF200',
+            strokeOpacity: 0.8,
+            strokeWeight: 3,
+            fillColor: '#FFF200',
+            fillOpacity: 0.5
+          });
+          var s4Polygon = new google.maps.Polygon({
+            paths: coords4,
+            strokeColor: '#3CB043',
+            strokeOpacity: 0.8,
+            strokeWeight: 3,
+            fillColor: '#3CB043',
+            fillOpacity: 0.5
+          });
+          var s5Polygon = new google.maps.Polygon({
+            paths: coords5,
+            strokeColor: '#3944BC',
+            strokeOpacity: 0.8,
+            strokeWeight: 3,
+            fillColor: '#3944BC',
+            fillOpacity: 0.5
+          });
+          var s6Polygon = new google.maps.Polygon({
+            paths: coords6,
+            strokeColor: '#660099',
+            strokeOpacity: 0.8,
+            strokeWeight: 3,
+            fillColor: '#660099',
+            fillOpacity: 0.5
+          });
+
+          s1Polygon.setMap(map);
+          s2Polygon.setMap(map);
+          s3Polygon.setMap(map);
+          s4Polygon.setMap(map);
+          s5Polygon.setMap(map);
+          s6Polygon.setMap(map);
+        } 
+      </script>
+
+    </section>
+
+
+
+  </main>
+
+  <footer class="footer-area">
+    <div class="container">
+      <div class="">
+        <div class="site-logo text-center py-4">
+          <a href="#"><img src="./img/logo.png" alt=""></a>
+        </div>
+        <div class="social text-center">
+          <h5 class="text-uppercase">Follow me</h5>
+          <a href="https://www.facebook.com/dinu.alexandru.7543/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/hi.im.alex21/"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          
+        </div>
+
+        
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="./js/jquery.3.5.1.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+            
+    $(function() {
+        
+        var documentEl = $(document),
+            fadeElem = $('.fade-scroll-150');
+        
+        
+        documentEl.on('scroll', function() {
+            var currScrollPos = documentEl.scrollTop();
+            
+            fadeElem.each(function() {
+                var $this = $(this),
+                    elemOffsetTop = $this.offset().top;
+                if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/150);
+            }); 
+        });
+        
+    });
+
+    $(function() {
+        
+        var documentEl = $(document),
+            fadeElem = $('.fade-scroll-400');
+        
+        
+        documentEl.on('scroll', function() {
+            var currScrollPos = documentEl.scrollTop();
+            
+            fadeElem.each(function() {
+                var $this = $(this),
+                    elemOffsetTop = $this.offset().top;
+                if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+            }); 
+        });
+        
+    });
+
+    $(function() {
+        
+        var documentEl = $(document),
+            fadeElem = $('.fade-scroll-650');
+        
+        
+        documentEl.on('scroll', function() {
+            var currScrollPos = documentEl.scrollTop();
+            
+            fadeElem.each(function() {
+                var $this = $(this),
+                    elemOffsetTop = $this.offset().top;
+                if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/650);
+            }); 
+        });
+        
+    });
+
+    $(function() {
+        
+        var documentEl = $(document),
+            fadeElem = $('.fade-scroll-100');
+        
+        
+        documentEl.on('scroll', function() {
+            var currScrollPos = documentEl.scrollTop();
+            
+            fadeElem.each(function() {
+                var $this = $(this),
+                    elemOffsetTop = $this.offset().top;
+                if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/100);
+            }); 
+        });
+        
+    });
+
+</script>
+
+<script type="text/javascript">
+
+
+let nav_offset_top = $('.header_area').height() + 50;
+
+function navbarFixed() {
+    if ($('.header_area').length) {
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            if (scroll >= nav_offset_top) {
+                $('.header_area .main-menu').addClass('navbar_fixed');
+            } else {
+                $('.header_area .main-menu').removeClass('navbar_fixed');
+            }
+        })
+    }
+}
+
+navbarFixed();
+
+</script>
+
+
+</body>
+
+</html>

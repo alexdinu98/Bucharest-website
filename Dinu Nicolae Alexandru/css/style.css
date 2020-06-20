@@ -1,0 +1,184 @@
+@import url(./fonts.css);
+
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+#map { 
+    height: 50vh; 
+    width: 100%; 
+    background: #222;
+  color: white;
+  padding: 1rem;
+    
+   } 
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 10rem ;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/3px var(--roboto);
+    text-transform: uppercase;
+    padding: 3rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+
+.site-main .site-banner {
+    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+    padding-left: 150px;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+.site-title {
+    padding-left: 100px;
+}
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+    
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/ 60px var(--roboto);
+    letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+.bucuresti {
+    padding: 20vmin 0;
+}
+
+.bucuresti .row .col-md-6 .buc img{
+    opacity: 0.8;
+    width: 1%;
+    border-radius: 0.2em;
+}
+
+
+
+
+
+
+
+.con{
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    perspective: 800 ;
+    -webkit-perspective: 800;
+    padding-top: 1.7rem;
+}
+
+.card {
+    background-color: white;
+    height:100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+    transition: all 2s ease;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.back{
+    position: relative;
+    bottom: 403px;
+    transform: rotateY(180deg);
+}
+.front, .back{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+img{
+    border-radius: 10px;
+}
+
+
+.pad-buc{
+    padding-top: 15rem;
+}
+
+.pad-copy{
+    padding-right: 50rem;
+}
+
+
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+    font:normal 500 23px/30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+    font-size: 22px;
+    padding:2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color:var(--primary-color);
+}
